@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --primary-color: rgba(238, 44, 130, 0.8);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.content-container {
+  width: 100%;
+  flex-grow: 1;
+  place-self: start center;
+  padding: 10vh 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: auto 15vh;
+}
+
+.main-container .project {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1vh;
+}
+
+.main-container nav {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  top: 3vh;
+  right: -4vh;
+  padding: 0 20vh;
+}
+
+#menulist li a {
+  color: var(--primary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 25vh;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  font-size: 3vh;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.main-container header nav a:hover {
+  color: rgb(149, 149, 149);
+}
+
+a:is(:active, :visited, :link).active {
+  color: var(--primary-color);
+}
+
+/* Index styles */
+/* Content-container */
+.content-container {
+  width: 100%;
+  flex-grow: 1;
+  place-self: start center;
+  padding: 10vh 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.first {
+  display: flex;
+}
+
+.content-container h1 {
+  font-size: 11vh;
+  font-family: "Playfair Display", serif;
+  color: rgb(47, 47, 47);
+  width: 80%;
+}
+
+.content-container span {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.content-container #profile,
+h3,
+.container-foot span {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.content-container h2 {
+  color: var(--primary-color);
+  font-size: 12vh;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  margin: 1.5vh 0;
+}
+
+#span {
+  font-size: 3vh;
+  font-weight: 400;
+  line-height: 6vh;
+  margin-bottom: 0;
+  width: 55%;
+}
+
+span {
+  font-weight: 800;
+}
+
+#bookCall {
+  margin: 2em 0;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.5em;
+  width: 38vh;
+  border: none;
+  border-radius: 0.5vh;
+  font-size: 3vh;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#bookCall:hover {
+  box-shadow: 1vh 1vh 1vh 0.1vh rgb(29, 29, 29);
+  background-color: rgb(212, 24, 118);
+}
+
+.laura img {
+  width: 60vh;
+  position: relative;
+  right: 30vh;
+  bottom: -25vh;
+}
+
+.bgPaper {
+  background-image: url(images/white-paper-texture.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+#what {
+  text-align: center;
+  font-size: 10vh;
+  color: rgb(52, 52, 52);
+  padding-top: 10vh;
+}
+
+.whatGood {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 16vh;
+  left: 38vh;
+}
+
+.image-container img {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 30vh;
+}
+
+.image-container p {
+  width: 70%;
+  font-size: 2.2vh;
+  margin-top: 0;
+  text-align: center;
+  line-height: 4vh;
+  position: relative;
+  left: -4vh;
+}
+
+.image-container span {
+  color: var(--primary-color);
+}
+
+.bgWhite {
+  background-color: white;
+  height: 110vh;
+  margin-top: 30vh;
+  padding: 20vh;
+}
+
+.inWhite {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.inWhite h4 {
+  font-size: 10vh;
+}
+
+.inWhite span {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.inWhite p {
+  width: 100%;
+  font-size: 3vh;
+  line-height: 6vh;
+  margin-top: 6vh;
+}
+
+/* Footer */
+footer {
+  height: 40vh;
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 49, 49);
+  align-items: center;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  margin: 16vh;
+  position: relative;
+  width: 80%;
+}
+#girl {
+  width: 8vh;
+}
+
+.container-foot {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-foot span {
+  color: var(--primary-color);
+  font-size: 3vh;
+  line-height: 8vh;
+}
+
+.container-foot p {
+  width: 60%;
+  margin-top: 2vh;
+}
+
+.container-foot a,
+.container-foot p {
+  color: white;
+  line-height: 6vh;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.socmed {
+  margin-top: 2vh;
+}
+
+.socmed img {
+  background-color: white;
+  border-radius: 16vh;
+  width: 5vh;
+}
+
+/* About styles */
+.content-container-about {
+  padding: 10vh;
+}
+
+.about img {
+  float: right;
+  padding: 10vh;
+}
+
+.AboutProfile h1 {
+  font-size: 10vh;
+  margin-top: 10vh;
+}
+
+.AboutProfile span {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.AboutProfile #aboutSpan {
+  font-size: 3vh;
+  line-height: 4vh;
+  color: rgb(78, 78, 78);
+  width: 80%;
+}
+
+#emailMe {
+  margin: 2vh 4vh;
+  padding: 0.5em;
+  width: 38vh;
+  background-color: white;
+  border-radius: 0.5vh;
+  font-size: 3vh;
+  cursor: pointer;
+}
+
+#emailMe:hover {
+  box-shadow: 1vh 1vh 1vh 0.1vh rgb(29, 29, 29);
+}
+
+/* Contact */
+.content-contact {
+  padding: 10vh;
+  display: flex;
+}
+
+.contactImg img {
+  position: relative;
+  width: 45vh;
+  left: -14vh;
+  top: 10.2vh;
+}
+
+.flower img {
+  position: absolute;
+  right: 6vh;
+  bottom: 5vh;
+  width: 30vh;
+}
+
+
+.contactProfile h1 {
+  font-size: 12vh;
+  margin-bottom: 5vh;
+}
+
+.contactProfile #contactSpan {
+  font-size: 3vh;
+  line-height: 4vh;
+  color: rgb(78, 78, 78);
+  width: 80%;
+}
+
+/* Portofolio */
+.flowerPorto img {
+  width: 20vh;
+  position: absolute;
+  right: 10vh;
+  bottom: 10vh;
+}
+
+/* Smart Phone */
+/* Media 600px */
+@media screen and (max-width: 37.5rem) {
+  .content-container {
+    margin: auto 5vh;
+  }
+
+  nav {
+    z-index: 5;
+  }
+
+  .first {
+    display: block;
+  }
+
+  .main-container nav {
+    flex-direction: row;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 20vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(252, 224, 228);
+    gap: 0;
+    overflow: hidden;
+    width: 90vh;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+
+  br {
+    display: none;
+  }
+
+  nav ul li:first-child {
+    border-top: 3px solid var(--primary-color);
+    width: 65vh;
+  }
+
+  nav ul li:hover {
+    background-color: rgb(228, 223, 223);
+  }
+
+  .logo {
+    display: contents;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 1.5s;
+  }
+  li:hover {
+    background-color: rgb(220, 220, 220);
+    width: 20em;
+  }
+
+  .laura img {
+    position: static;
+    margin-bottom: 10vh;
+    margin-left: 30vh;
+    top: -10vh;
+  }
+
+  .bgPaper {
+    margin-top: -21vh;
+    height: 320vh;
+  }
+
+  #what {
+    padding: 15vh;
+  }
+
+  .whatGood {
+    display: inline;
+  }
+
+  .image-container {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .image-container img {
+    width: 50vh;
+  }
+
+  .image-container p {
+    font-size: 3vh;
+    padding-bottom: 15vh;
+    padding-top: 5vh;
+    left: 2vh;
+  }
+
+  .inWhite p {
+    width: 100%;
+    margin-left: 0vh;
+  }
+
+  .inWhite {
+    width: 100%;
+  }
+
+  .socmed img {
+    width: 4vh;
+  }
+
+  /* About Phone */
+  .about img {
+    float: none;
+  }
+
+  .AboutProfile h1 {
+    margin-bottom: 5vh;
+  }
+
+  .AboutProfile #aboutSpan {
+    margin-top: 7vh;
+  }
+
+  #emailMe {
+    border: 1px solid rgb(122, 122, 122);
+  }
+
+  /* content */
+  .content-contact {
+    display: inline-block;
+    padding: 5vh;
+  }
+  .contactImg img {
+    left: 45vh;
+    top: 5.5vh;
+  }
+  .flower img {
+    bottom: -51vh;
+    right: 14vh;
+  }
+
+  /* Portofolio Phone */
+  .flowerPorto img {
+    right: -1vh;
+    bottom: -5vh;
+  }
+}
